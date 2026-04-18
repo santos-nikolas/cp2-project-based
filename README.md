@@ -8,7 +8,7 @@ Este repositório contém a documentação completa para a montagem e análise t
 ## 👥 Integrantes do Grupo
 *   Nikolas Rodrigues Moura dos Santos (RM551566)
 *   Rodrigo Brasileiro (RM98952)
-*   Bruno (RM558303)
+*   Bruno Eduardo Caputo Paulino (RM558303)
 
 **Profª Responsável:** Me. Gedeane G.S. Kenshima
 
