@@ -1,7 +1,7 @@
 # Check Point 2: Caixa Mecânica com Engrenagens
 ## Disciplina: Project-based Maker Lab | Engenharia de Software - FIAP
 
-Este repositório contém a documentação completa para a montagem e análise técnica de uma caixa mecânica funcional (Iris Box) utilizando sistemas de engrenagens. O projeto aplica conceitos de mecânica, medição de precisão com paquímetro e modelagem 3D paramétrica.
+Este repositório contém a documentação completa para a montagem e análise técnica de uma caixa mecânica funcional (Iris Box). O projeto visa aplicar conceitos de mecânica, medição de precisão com paquímetro e modelagem 3D paramétrica aplicada à Engenharia de Software.
 
 ---
 
@@ -14,18 +14,8 @@ Este repositório contém a documentação completa para a montagem e análise t
 
 ---
 
-## 📦 Conteúdo do Kit
-O conjunto utilizado nas fotos é composto por peças impressas em 3D (Cores: Rosa, Branco, Azul e Amarelo):
-*   **02** Bases circulares (suporte das engrenagens)
-*   **01** Tampa superior com design de circuito
-*   **10** Engrenagens (1 central azul, demais rosas e amarelas)
-*   **02** Eixos centrais de travamento
-*   **05** Gavetas/Pétalas móveis (Rosa e Branco)
-
----
-
 ## 📐 Especificações e Medidas
-Realizamos a medição técnica utilizando um paquímetro digital para validar as tolerâncias de impressão:
+Utilizamos um paquímetro para aferir as peças impressas. Estas medidas foram essenciais para garantir que o conjunto não travasse durante o uso.
 
 | Peça | Atributo | Medida Real (mm) |
 | :--- | :--- | :--- |
@@ -41,49 +31,64 @@ Realizamos a medição técnica utilizando um paquímetro digital para validar a
 ## 🛠 Guia de Montagem (Passo a Passo)
 
 ### 1. Sincronização das Engrenagens
-O primeiro passo consiste em posicionar a engrenagem central (azul) e distribuir as engrenagens periféricas (rosas e amarelas) sobre a base. É crucial que os dentes estejam perfeitamente alinhados para que o torque seja distribuído igualmente.
+O segredo do funcionamento está na sincronia. Posicionamos a engrenagem central (azul) e distribuímos as periféricas (rosas e amarela) em formato de estrela. Os dentes devem estar perfeitamente engatados antes de fechar a base.
 
-> ![Sincronização de Engrenagens](fotos/passo1_engrenagens.jpg) *(Referência: Foto das engrenagens coloridas em estrela)*
+<p align="center">
+  <img src="fotos/img-1.png" width="22%" />
+  <img src="fotos/img-2.png" width="22%" />
+  <img src="fotos/img-3.png" width="22%" />
+  <img src="fotos/img-4.png" width="22%" />
+</p>
 
 ### 2. Montagem da Estrutura de Acionamento
-Encaixamos a base de suporte superior. Note que os eixos das engrenagens periféricas devem atravessar os furos da base branca para permitir o movimento externo.
+Com as engrenagens posicionadas, instalamos a base de suporte branca. Os eixos das engrenagens periféricas devem atravessar os orifícios da base para permitir o acionamento das pétalas na parte superior.
 
-> ![Base de Acionamento](fotos/passo2_base.jpg) *(Referência: Foto segurando a base branca com eixos coloridos)*
+<p align="center">
+  <img src="fotos/img-5.png" width="50%" />
+</p>
 
 ### 3. Instalação das Pétalas (Gavetas)
-As 5 pétalas são encaixadas nos pinos das engrenagens periféricas. Cada pétala possui um trilho de guia que permite o movimento de expansão (abertura) e contração (fechamento).
+Cada uma das 5 pétalas (gavetas) é encaixada nos eixos que ficaram expostos no passo anterior. É nesta etapa que o design da "Íris" começa a tomar forma, permitindo o armazenamento de componentes.
 
-> ![Instalação das Pétalas](fotos/passo3_petalas.jpg) *(Referência: Foto encaixando as peças rosas/brancas na lateral)*
+<p align="center">
+  <img src="fotos/img-6.png" width="50%" />
+</p>
 
 ### 4. Finalização e Teste de Torque
-Colocamos a tampa decorada e o manipulador central. Ao girar o manipulador, o sistema de engrenagens converte o movimento rotacional em movimento linear das pétalas, abrindo a caixa.
+Por fim, instalamos a tampa decorada e o pino de acionamento central. O teste de funcionalidade consiste em girar a tampa ou o pino: todas as gavetas devem expandir e retrair simultaneamente de forma fluida.
 
-> ![Produto Finalizado](fotos/passo4_final.jpg) *(Referência: Foto da caixa fechada sendo segurada pelas mãos)*
+<p align="center">
+  <img src="fotos/img-7.png" width="30%" />
+  <img src="fotos/img-8.png" width="30%" />
+  <img src="fotos/img-9.png" width="30%" />
+</p>
 
 ---
 
 ## 🔍 Observações Técnicas (Checklist)
-*   **Encaixes:** Os encaixes apresentaram-se justos (press-fit), garantindo que as engrenagens não deslizem fora do eixo durante a operação.
-*   **Rotação:** O sistema apresentou baixa fricção, permitindo a abertura completa com esforço mínimo.
-*   **Engate:** Não houve "pulo" de dentes, indicando que a distância entre centros medida (22.5mm) está correta para o módulo das engrenagens.
-*   **Trava:** O movimento é fluido, sem pontos de travamento mecânico nas extremidades do curso.
+*   **Encaixes:** Os eixos e furos foram projetados com uma tolerância de 0.2mm, resultando em encaixes firmes, mas que permitem a rotação.
+*   **Rotação:** O sistema gira livremente. Não houve necessidade de lixamento das peças.
+*   **Engate:** As engrenagens mantêm o contato constante, sem "pular" dentes durante o torque.
+*   **Trava:** O movimento de abertura e fechamento é completo, sem obstruções mecânicas.
 
 ---
 
 ## 💻 Modelagem 3D
-Para este Check Point, modelamos a **Engrenagem Periférica** utilizando **OpenSCAD**.
+Realizamos a modelagem de uma das **Engrenagens Periféricas** utilizando a linguagem **OpenSCAD**.
 
-*   **Destaque técnico:** O código foi desenvolvido de forma paramétrica. Utilizamos um `for loop` para distribuir os dentes radialmente e uma operação de `difference()` para criar o furo do eixo com a tolerância exata de 0.2mm (folga necessária para rotação livre).
-*   **Otimização:** A peça foi desenhada para ser impressa sem suportes, com base plana.
+*   **Destaque Técnico:** O modelo é paramétrico, permitindo ajustar o número de dentes e o diâmetro do furo central. A geometria foi otimizada para impressão FDM, dispensando o uso de suportes e reduzindo o desperdício de material.
+*   **Arquivo:** Localizado em `/modelagem/engrenagem_periferica.scad`.
 
-> ![Render Modelagem 3D](modelagem/render_engrenagem.png) *(Adicione aqui o print do OpenSCAD que você gerou)*
+<p align="center">
+  <img src="fotos/img-10.png" width="50%" />
+</p>
 
 ---
 
 ## 📂 Organização do Repositório
-*   `/fotos`: Imagens reais da montagem realizadas pelo grupo.
-*   `/modelagem`: Arquivo `engrenagem_periferica.scad` com o código fonte.
-*   `README.md`: Documentação completa do projeto.
+*   `/fotos`: Contém as imagens `img-1.png` a `img-10.png` documentando o processo.
+*   `/modelagem`: Contém o arquivo fonte `.scad` e o exportado `.stl`.
+*   `README.md`: Documentação técnica principal.
 
 ---
-© 2026 FIAP - Engenharia de Software. Documentação para fins acadêmicos.
+© 2026 FIAP - Engenharia de Software. Documentação de Check Point 2.
