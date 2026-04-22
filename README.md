@@ -1,7 +1,7 @@
 # Check Point 2: Caixa Mecânica com Engrenagens
 ## Disciplina: Project-based Maker Lab | Engenharia de Software - FIAP
 
-Este repositório contém a documentação completa para a montagem e análise técnica de uma caixa mecânica funcional utilizando sistemas de engrenagens. O projeto visa aplicar conceitos de mecânica, medição de precisão e modelagem 3D.
+Este repositório contém a documentação completa para a montagem e análise técnica de uma caixa mecânica funcional (Iris Box) utilizando sistemas de engrenagens. O projeto aplica conceitos de mecânica, medição de precisão com paquímetro e modelagem 3D paramétrica.
 
 ---
 
@@ -15,81 +15,75 @@ Este repositório contém a documentação completa para a montagem e análise t
 ---
 
 ## 📦 Conteúdo do Kit
-O conjunto é composto pelas seguintes peças:
-*   **02** Caixas inferiores (base e suporte)
-*   **01** Tampa superior decorada
-*   **10** Engrenagens (sendo 1 central e as demais periféricas)
-*   **02** Eixos e encaixes
-*   **05** Componentes móveis (gavetas/pétalas da iris)
+O conjunto utilizado nas fotos é composto por peças impressas em 3D (Cores: Rosa, Branco, Azul e Amarelo):
+*   **02** Bases circulares (suporte das engrenagens)
+*   **01** Tampa superior com design de circuito
+*   **10** Engrenagens (1 central azul, demais rosas e amarelas)
+*   **02** Eixos centrais de travamento
+*   **05** Gavetas/Pétalas móveis (Rosa e Branco)
 
 ---
 
 ## 📐 Especificações e Medidas
-Utilizando um paquímetro, realizamos a medição das peças principais para garantir a precisão do conjunto.
+Realizamos a medição técnica utilizando um paquímetro digital para validar as tolerâncias de impressão:
 
-| Peça | Atributo | Medida (mm) |
+| Peça | Atributo | Medida Real (mm) |
 | :--- | :--- | :--- |
-| Tampa | Espessura | 4.0 mm |
-| Caixa | Diâmetro dos furos | 5.2 mm |
-| Eixos | Diâmetro e Comprimento | Ø 5.0 mm / L 12.0 mm |
-| Engrenagem | Largura/Espessura | 6.0 mm |
-| Eixos | Distância entre centros | 22.5 mm |
-| Alojamento | Profundidade interna | 30.0 mm |
+| **Tampa** | Espessura | 4.0 mm |
+| **Caixa** | Diâmetro dos furos | 5.2 mm |
+| **Eixos** | Diâmetro e Comprimento | Ø 5.0 mm / L 12.0 mm |
+| **Engrenagem** | Largura/Espessura | 6.0 mm |
+| **Eixos** | Distância entre centros | 22.5 mm |
+| **Alojamento** | Profundidade interna | 30.0 mm |
 
 ---
 
 ## 🛠 Guia de Montagem (Passo a Passo)
 
-### 1. Preparação da Base
-Posicione a caixa inferior principal sobre uma superfície plana. Certifique-se de que os alojamentos para os eixos estejam limpos e sem rebarbas de impressão.
+### 1. Sincronização das Engrenagens
+O primeiro passo consiste em posicionar a engrenagem central (azul) e distribuir as engrenagens periféricas (rosas e amarelas) sobre a base. É crucial que os dentes estejam perfeitamente alinhados para que o torque seja distribuído igualmente.
 
-> **[ADICIONAR FOTO DA CAIXA VAZIA AQUI]**
+> ![Sincronização de Engrenagens](fotos/passo1_engrenagens.jpg) *(Referência: Foto das engrenagens coloridas em estrela)*
 
-### 2. Instalação do Sistema de Engrenagens
-O segredo do funcionamento está na sincronia. 
-1. Coloque a engrenagem central no eixo principal.
-2. Posicione as engrenagens intermediárias e as de acionamento de forma que os dentes estejam perfeitamente engatados.
-*Nota: Verifique se o movimento está fluido antes de prosseguir.*
+### 2. Montagem da Estrutura de Acionamento
+Encaixamos a base de suporte superior. Note que os eixos das engrenagens periféricas devem atravessar os furos da base branca para permitir o movimento externo.
 
-> **[ADICIONAR FOTO DO SISTEMA DE ENGRENAGENS MONTADO - Use a foto do PDF como referência para a posição]**
+> ![Base de Acionamento](fotos/passo2_base.jpg) *(Referência: Foto segurando a base branca com eixos coloridos)*
 
-### 3. Montagem dos Componentes Móveis (Pétalas)
-Encaixe os 5 componentes móveis nos pinos das engrenagens periféricas. Cada componente deve deslizar suavemente conforme as engrenagens giram.
+### 3. Instalação das Pétalas (Gavetas)
+As 5 pétalas são encaixadas nos pinos das engrenagens periféricas. Cada pétala possui um trilho de guia que permite o movimento de expansão (abertura) e contração (fechamento).
 
-> **[ADICIONAR FOTO DAS GAVETAS SENDO ENCAIXADAS]**
+> ![Instalação das Pétalas](fotos/passo3_petalas.jpg) *(Referência: Foto encaixando as peças rosas/brancas na lateral)*
 
-### 4. Fechamento e Ajuste Fino
-Coloque a tampa superior e trave o conjunto com os eixos finais. 
-*   **Teste de funcionamento:** Gire o componente central. A caixa deve abrir e fechar totalmente todas as gavetas simultaneamente.
+### 4. Finalização e Teste de Torque
+Colocamos a tampa decorada e o manipulador central. Ao girar o manipulador, o sistema de engrenagens converte o movimento rotacional em movimento linear das pétalas, abrindo a caixa.
 
-> **[ADICIONAR FOTO DA CAIXA FINALIZADA E FUNCIONANDO]**
+> ![Produto Finalizado](fotos/passo4_final.jpg) *(Referência: Foto da caixa fechada sendo segurada pelas mãos)*
 
 ---
 
 ## 🔍 Observações Técnicas (Checklist)
-Durante a montagem, observamos os seguintes pontos:
-*   **Encaixes:** [Ex: Os encaixes apresentaram-se justos, necessitando leve pressão].
-*   **Rotação:** [Ex: O eixo gira livremente após a aplicação de (lubrificante/limpeza)].
-*   **Engate:** As engrenagens engatam corretamente sem pular dentes.
-*   **Trava:** Não foram detectados pontos de travamento no curso total do movimento.
+*   **Encaixes:** Os encaixes apresentaram-se justos (press-fit), garantindo que as engrenagens não deslizem fora do eixo durante a operação.
+*   **Rotação:** O sistema apresentou baixa fricção, permitindo a abertura completa com esforço mínimo.
+*   **Engate:** Não houve "pulo" de dentes, indicando que a distância entre centros medida (22.5mm) está correta para o módulo das engrenagens.
+*   **Trava:** O movimento é fluido, sem pontos de travamento mecânico nas extremidades do curso.
 
 ---
 
 ## 💻 Modelagem 3D
-Como parte do projeto, realizamos a modelagem 3D de uma das peças do conjunto: **[NOME DA PEÇA, ex: Engrenagem Periférica]**.
+Para este Check Point, modelamos a **Engrenagem Periférica** utilizando **OpenSCAD**.
 
-*   **Software utilizado:** [Ex: OpenSCAD / Fusion 360 / Tinkercad]
-*   **Arquivo:** O arquivo fonte pode ser encontrado na pasta `/modelagem` deste repositório.
-*   **Destaque técnico:** O modelo foi desenhado visando a impressão sem necessidade de suportes, otimizando o tempo de fabricação.
+*   **Destaque técnico:** O código foi desenvolvido de forma paramétrica. Utilizamos um `for loop` para distribuir os dentes radialmente e uma operação de `difference()` para criar o furo do eixo com a tolerância exata de 0.2mm (folga necessária para rotação livre).
+*   **Otimização:** A peça foi desenhada para ser impressa sem suportes, com base plana.
 
-> **[ADICIONAR PRINT/RENDER DO SEU MODELO 3D AQUI]**
+> ![Render Modelagem 3D](modelagem/render_engrenagem.png) *(Adicione aqui o print do OpenSCAD que você gerou)*
 
 ---
 
 ## 📂 Organização do Repositório
-*   `/fotos`: Imagens do passo a passo e produto final.
-*   `/modelagem`: Arquivo 3D (.scad, .stl ou .step).
-*   `README.md`: Documentação principal.
+*   `/fotos`: Imagens reais da montagem realizadas pelo grupo.
+*   `/modelagem`: Arquivo `engrenagem_periferica.scad` com o código fonte.
+*   `README.md`: Documentação completa do projeto.
 
 ---
-© 2024 FIAP - Engenharia de Software.
+© 2026 FIAP - Engenharia de Software. Documentação para fins acadêmicos.
